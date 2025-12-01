@@ -23,6 +23,10 @@
   &:hover {
     transform: scale(1.2);
     z-index: 10;
+
+    &__title {
+      color: $dark-blue;
+    }
   }
 
   &__image {
@@ -47,10 +51,7 @@
     line-height: 16px;
     text-decoration: none;
 
-    transition:
-      background-color 300ms ease,
-      color 300ms ease,
-      border 300ms ease;
+    transition: transform 300ms ease;
 
     &:hover {
       box-sizing: border-box;
@@ -76,10 +77,6 @@
     color: $main-accent-color;
 
     transition: color 300ms ease;
-
-    &:hover &__title {
-      color: $dark-blue;
-    }
   }
 
   &__code {

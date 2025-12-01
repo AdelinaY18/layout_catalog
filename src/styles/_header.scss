@@ -36,10 +36,15 @@
         display: flex;
         text-transform: uppercase;
         text-decoration: none;
-        color: #000;
+        color: $main-accent-color;
         position: relative;
         align-items: center;
         border-radius: 8px;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0;
+
+        transition: transform 300ms ease;
 
         &:hover {
           color: $blue-color;
